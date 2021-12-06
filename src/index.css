@@ -35,7 +35,62 @@
   animation-fill-mode: both;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 1250px) {
+ .nav-mobile{
+   height: 70px;
+   width: 100vw;
+ }
+
+ .ul-mobile{
+  display: flex;
+  flex-direction: row;
+ }
+
+ .border-on{
+  border-bottom: 3px solid black;
+  transition: .1s ease-out;
+  border-right: 0px solid black;
+  padding: 20px;
+ }
+
+ .border-off{
+  transition: .2s ease-in;
+  border-bottom: 0px solid black;
+  padding: 20px;
+ }
+
+ .li-mobile{
+ margin-bottom: 0px;
+ padding: 20px;
+ }
+
+ .grid-mobile{
+  grid-template-columns: auto;
+ }
+
+ .welcome-mobile{
+   margin-left: 0px;
+   padding: 20px;
+ }
+
+ .dont-display{
+ display: none;
+ }
+
+
+}
 
 
 

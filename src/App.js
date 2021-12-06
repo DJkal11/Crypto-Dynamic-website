@@ -40,19 +40,19 @@ function App() {
 
   return (
    <Router>
-     <div className="grid grid-cols-2">
-        <nav className="h-screen w-60 border-r-2 border-gray-300">
-          <ul>
-            <li className="mb-20 p-7" ><b>Crypto</b>.io</li>
-            <li onClick={handleClickWelcome} id="nav-item-1" className={border1 ? 'border-on font-bold text-gray-400 p-5 pl-7' : 'border-off font-bold text-gray-400 p-5 pl-7'}>
-              <Link to="/">Welcome</Link>
-            </li>
-            <li onClick={handleClickCryptobank} id="nav-item-2" className={border2 ? "border-on font-bold text-gray-400 p-5 pl-7" : "border-off font-bold text-gray-400 p-5 pl-7" }>
-              <Link to="/Cryptobank">Cryptobank</Link>
-            </li>
-            <li onClick={handleClickExchange} id="nav-item-3" className={border3 ? "border-on font-bold text-gray-400 p-5 pl-7" : "border-off font-bold text-gray-400 p-5 pl-7"}>
-              <Link to="/Exchange">Exchange</Link>
-            </li>
+     <div className="grid grid-cols-2 grid-mobile display">
+        <nav className="h-screen w-60 border-r-2 border-gray-300 nav-mobile bg-white">
+          <ul className="ul-mobile">
+            <li className="mb-20 p-7 li-mobile" ><b>Crypto</b>.io</li>
+            <Link to="/"><li onClick={handleClickWelcome} id="nav-item-1" className={border1 ? 'border-on font-bold text-gray-400 p-5 pl-7' : 'border-off font-bold text-gray-400 p-5 pl-7'}>
+              Welcome
+            </li></Link>
+            <Link to="/Cryptobank"><li onClick={handleClickCryptobank} id="nav-item-2" className={border2 ? "border-on font-bold text-gray-400 p-5 pl-7" : "border-off font-bold text-gray-400 p-5 pl-7" }>
+              Cryptobank
+            </li></Link>
+            <Link to="/Exchange"><li onClick={handleClickExchange} id="nav-item-3" className={border3 ? "border-on font-bold text-gray-400 p-5 pl-7" : "border-off font-bold text-gray-400 p-5 pl-7"}>
+              Exchange
+            </li></Link>
           </ul>
         </nav>
 
