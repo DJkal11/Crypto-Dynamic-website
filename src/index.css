@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1023px) {
  .nav-mobile{
    height: 70px;
    width: 100vw;
@@ -90,6 +90,22 @@
  }
 
 
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  li{
+    font-size: 0.7rem;
+    margin-left: -10px;
+  }
+  .border-on{
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1023px) {
+.welcome-mobile{
+  margin-left: -170px;
+}
 }
 
 

@@ -7,9 +7,9 @@ function Exchange() {
         <button className="mt-10 w-36 p-2 hover:bg-purple-400  border-purple-500 border-2 rounded-3xl font-bold">Let's Talk</button>
         </div>
          
-         <div className="grid grid-cols-2 grid-mobile"> 
+         <div className="grid grid-cols-2 grid-mobile gap-28"> 
         
-        <div className=" mt-40 w-96 h-96 overflow-hidden dont-display">
+        <div className=" mt-40 w-80 h-96 overflow-hidden dont-display">
             <img src="/crypto-portfolio.svg" alt="#" />
         </div>
 

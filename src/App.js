@@ -40,7 +40,7 @@ function App() {
 
   return (
    <Router>
-     <div className="grid grid-cols-2 grid-mobile display">
+     <div className="grid grid-cols-2  grid-mobile display overflow-hidden">
         <nav className="h-screen w-60 border-r-2 border-gray-300 nav-mobile bg-white">
           <ul className="ul-mobile">
             <li className="mb-20 p-7 li-mobile" ><b>Crypto</b>.io</li>
